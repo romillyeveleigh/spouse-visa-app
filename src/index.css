@@ -9,6 +9,10 @@ body {
  height: 200px;
  }
 
+.card-container {
+cursor: pointer;
+ }
+
  .cardList {
  display: flex;
  justify-content: center;
