@@ -3,6 +3,6 @@ export const categoryObject = [
 'Payment Confirmation',
 'Personal Documents',
 'Financial Requirements', 
-'Accomodation',
-'Cover Letters',
+'Accommodation Documentation',
+'Relationship Evidence',
 ];

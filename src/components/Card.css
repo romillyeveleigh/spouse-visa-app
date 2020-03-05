@@ -1,0 +1,135 @@
+
+/*red*/
+
+.custom-control-input.red.is-valid~.custom-control-label, 
+.was-validated 
+.custom-control-input.red:valid~.custom-control-label {
+    color: #212529;
+}
+
+.custom-control-input.red.is-valid:checked~.custom-control-label::before, 
+.was-validated 
+.custom-control-input.red:valid:checked~.custom-control-label::before {
+    border-color: #dc3545;
+    background-color: #dc3545;
+}
+
+.custom-control-input.red.is-valid~.custom-control-label::before, 
+.was-validated 
+.custom-control-input.red:valid~.custom-control-label::before {
+    border-color: #212529;
+}
+
+.custom-control-input.red.is-invalid~.custom-control-label, 
+.was-validated 
+.custom-control-input.red:invalid~.custom-control-label {
+    color: #212529;
+}
+
+.custom-control-input.red.is-invalid~.custom-control-label::before, 
+.was-validated 
+.custom-control-input.red:invalid~.custom-control-label::before {
+    border-color: #212529;
+}
+
+/// orange
+
+.custom-control-input.orange.is-valid~.custom-control-label, 
+.was-validated 
+.custom-control-input.orange:valid~.custom-control-label {
+    color: #212529;
+}
+
+.custom-control-input.orange.is-valid:checked~.custom-control-label::before, 
+.was-validated 
+.custom-control-input.orange:valid:checked~.custom-control-label::before {
+    border-color: orange;
+    background-color: orange;
+}
+
+.custom-control-input.orange.is-valid~.custom-control-label::before, 
+.was-validated 
+.custom-control-input.orange:valid~.custom-control-label::before {
+    border-color: #212529;
+}
+
+.custom-control-input.orange.is-invalid~.custom-control-label, 
+.was-validated 
+.custom-control-input.orange:invalid~.custom-control-label {
+    color: #212529;
+}
+
+.custom-control-input.orange.is-invalid~.custom-control-label::before, 
+.was-validated 
+.custom-control-input.orange:invalid~.custom-control-label::before {
+    border-color: #212529;
+}
+
+.custom-control-input.orange.is-valid~.custom-control-label, 
+.was-validated 
+.custom-control-input.orange:valid~.custom-control-label {
+    color: #212529;
+}
+
+/// green
+
+.custom-control-input.green.is-valid~.custom-control-label, 
+.was-validated 
+.custom-control-input.green:valid~.custom-control-label {
+    color: #212529;
+}
+
+.custom-control-input.green.is-valid:checked~.custom-control-label::before, 
+.was-validated 
+.custom-control-input.green:valid:checked~.custom-control-label::before {
+    border-color: #34ce57;
+    background-color: #34ce57;
+}
+
+.custom-control-input.green.is-valid~.custom-control-label::before, 
+.was-validated 
+.custom-control-input.green:valid~.custom-control-label::before {
+    border-color: #212529;
+}
+
+.custom-control-input.green.is-invalid~.custom-control-label, 
+.was-validated 
+.custom-control-input.green:invalid~.custom-control-label {
+    color: #212529;
+}
+
+.custom-control-input.green.is-invalid~.custom-control-label::before, 
+.was-validated 
+.custom-control-input.green:invalid~.custom-control-label::before {
+    border-color: #212529;
+}
+
+.custom-control-input.green.is-valid~.custom-control-label, 
+.was-validated 
+.custom-control-input.green:valid~.custom-control-label {
+    color:  #212529;
+}
+
+// focus
+
+
+.was-validated .form-control:valid:focus, .form-control.is-valid:focus {
+  border-color:  #28a745;
+  box-shadow: 0 0 0 0.2rem rgba(86, 21, 27, 0.25);
+}
+
+.was-validated .custom-control-input.red:valid:focus ~ .custom-control-label::before, .custom-control-input.is-valid:focus ~ .custom-control-label::before {
+  box-shadow: 0 0 0 0.2rem rgba(220, 53, 69, 0.25);
+}
+
+.was-validated .custom-control-input.orange:valid:focus ~ .custom-control-label::before, .custom-control-input.is-valid:focus ~ .custom-control-label::before {
+  box-shadow: 0 0 0 0.2rem rgba(255, 165, 0, 0.25);
+}
+
+.was-validated .custom-control-input.green:valid:focus ~ .custom-control-label::before, .custom-control-input.is-valid:focus ~ .custom-control-label::before {
+  box-shadow: 0 0 0 0.2rem rgba(40, 167, 69, 0.25);
+}
+
+.h4 {
+    height: 2rem;
+}

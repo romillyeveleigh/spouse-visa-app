@@ -7,18 +7,21 @@ body {
  .card {
  width: 160px;
  height: 200px;
+ cursor: pointer;
  }
 
 .card-container {
-cursor: pointer;
+
  }
 
  .cardList {
  display: flex;
+ flex-wrap: wrap;
  justify-content: center;
+
  }
 
-.card-header {
+.cardHeader {
 font-size: 1em;
 }
 

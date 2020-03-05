@@ -3,12 +3,21 @@ import logo from './logo.svg';
 import './App.css';
 import CategoryList from './components/CategoryList';
 import { robots } from './Robots';
+import {Navbar} from 'react-bootstrap';
 
 function App() {
   return (
     <div>
       <div className="App tc">
-        <h1 className="App-header">Spouse Visa Application Helper</h1>
+        <Navbar bg="primary" variant="dark">
+          <Navbar.Brand href="#home">Spouse Visa Application Helper</Navbar.Brand>
+          <Navbar.Toggle />
+          <Navbar.Collapse className="justify-content-end">
+            <Navbar.Text>
+              Signed in as: <a href="#login">Mark Otto</a>
+            </Navbar.Text>
+          </Navbar.Collapse>
+        </Navbar>
           <p>
             Choose from the following document categories:
           </p>
