@@ -1,8 +1,6 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
 import CategoryList from './components/CategoryList';
-import { robots } from './Robots';
+import {robots} from './constants/Robots';
 import {Navbar} from 'react-bootstrap';
 
 function App() {

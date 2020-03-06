@@ -1,5 +1,5 @@
 
-/*red*/
+/*styling for red status radio button*/
 
 .custom-control-input.red.is-valid~.custom-control-label, 
 .was-validated 
@@ -32,7 +32,7 @@
     border-color: #212529;
 }
 
-/// orange
+/*styling for orange status radio button*/
 
 .custom-control-input.orange.is-valid~.custom-control-label, 
 .was-validated 
@@ -71,7 +71,7 @@
     color: #212529;
 }
 
-/// green
+/*styling for green status radio button*/
 
 .custom-control-input.green.is-valid~.custom-control-label, 
 .was-validated 
@@ -110,7 +110,7 @@
     color:  #212529;
 }
 
-// focus
+/*styling for radio button focus halos*/
 
 
 .was-validated .form-control:valid:focus, .form-control.is-valid:focus {
@@ -128,8 +128,4 @@
 
 .was-validated .custom-control-input.green:valid:focus ~ .custom-control-label::before, .custom-control-input.is-valid:focus ~ .custom-control-label::before {
   box-shadow: 0 0 0 0.2rem rgba(40, 167, 69, 0.25);
-}
-
-.h4 {
-    height: 2rem;
 }

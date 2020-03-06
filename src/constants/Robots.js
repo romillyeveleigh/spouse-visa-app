@@ -128,7 +128,7 @@ export const robots = [
   {
     category: 'Relationship Evidence',
     description: 'Marriage Certificate',
-    content: 'This is to show you are officially married.'
+    content: 'This is to show you are legally married.'
   },
   {
     category: 'Relationship Evidence',
