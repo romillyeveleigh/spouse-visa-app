@@ -29,6 +29,7 @@ const Card = ({ category, description, content, id, checkthis }) => {
             content={content}
             id={id}
             checkthis={checkthis}
+            color={'blue'}
         />
     </>
   );

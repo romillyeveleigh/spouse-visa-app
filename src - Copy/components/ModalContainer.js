@@ -1,6 +1,6 @@
 import React from 'react';
 import {render} from 'react-dom';
-import {Modal, Button, Badge} from 'react-bootstrap';
+import {Modal, Button} from 'react-bootstrap';
 import '../css/ModalContainer.css';
 import Checklist from './Checklist';
 
@@ -13,11 +13,10 @@ const ModalContainer = props => {
       aria-labelledby="contained-modal-title-vcenter"
       centered
       animation={false}
-
     >
       <Modal.Header closeButton>
         <Modal.Title id="contained-modal-title-vcenter">
-          {props.description}<h6><div id="modal-badge" class="hidden badge badge-pill badge-success">Done</div></h6>
+          {props.description} (id:{props.id}, color:{props.color})
         </Modal.Title>
       </Modal.Header>
       <Modal.Body>
@@ -49,7 +48,7 @@ const ModalContainer = props => {
         </div>
       </Modal.Body>
       <Modal.Footer>
-        <Button onClick={props.onHide} id="modal-button" className="">Close</Button>
+        <Button onClick={props.onHide}>Close</Button>
       </Modal.Footer>
     </Modal>
   );
