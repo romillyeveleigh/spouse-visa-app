@@ -6,7 +6,7 @@ import {Navbar} from 'react-bootstrap';
 function App() {
   return (
     <div>
-      <div className="App tc">
+      <div className="tc">
         <Navbar bg="primary" variant="dark">
           <Navbar.Brand href="#home">Spouse Visa Application Helper</Navbar.Brand>
           <Navbar.Toggle />
