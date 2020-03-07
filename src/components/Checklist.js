@@ -5,24 +5,27 @@ import {user} from '../constants/User';
 
 const Checklist = ( {id, checkthis} ) => {
 
-     const [count, setCount] = useState(0);
+    const [count, setCount] = useState(0);
 
-  useEffect(() => {
-    const closeButton = document.querySelector('#modal-button')
-    const modalTitle = document.querySelector('#contained-modal-title-vcenter')
-    const modalBadge = document.querySelector('#modal-badge')
-    if (user.card[id].filter(boolean => boolean === true).length === checkthis.length) {
-    closeButton.className = "btn btn-success border-success";
-    modalTitle.className = "h4 text-success border-success";
-    modalBadge.className = "badge badge-pill badge-success";
-    } else {
-    closeButton.className = "btn btn-primary";
-    modalTitle.className = "h4 text-dark";
-    modalBadge.className = "hidden badge badge-pill badge-success";
+    useEffect(() => {
+
+        const modalButton = document.querySelector('#modal-button')
+        const modalTitle = document.querySelector('#contained-modal-title-vcenter')
+        const modalBadge = document.querySelector('#modal-badge')
+
+        // check if this card is 'done'
+        if (user.card[id].filter(boolean => boolean === true).length === checkthis.length) {
+            // if done, add styles
+            modalButton.className = "btn btn-success border-success";
+            modalTitle.className = "h4 text-success border-success";
+            modalBadge.className = "shadow-4 badge badge-pill badge-success";
+        } else {
+            // if not, revert styles
+            modalButton.className = "btn btn-primary";
+            modalTitle.className = "h4 text-dark";
+            modalBadge.className = "hidden badge badge-pill badge-success";
     }
-    
-
-  });
+    });
 
     return (
                 // return list of questions from this card's checklist

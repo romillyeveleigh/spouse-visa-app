@@ -13,11 +13,10 @@ const ModalContainer = props => {
       aria-labelledby="contained-modal-title-vcenter"
       centered
       animation={false}
-
     >
       <Modal.Header closeButton>
         <Modal.Title id="contained-modal-title-vcenter">
-          {props.description}<h6><div id="modal-badge" class="hidden badge badge-pill badge-success">Done</div></h6>
+          {props.description}<h6><div id="modal-badge" className="hidden badge badge-pill badge-success">Done✓</div></h6>
         </Modal.Title>
       </Modal.Header>
       <Modal.Body>
@@ -29,7 +28,6 @@ const ModalContainer = props => {
             <Checklist 
               id={props.id} 
               checkthis={props.checkthis}
-              
             />
           </div>
       <p>What is the current status of this?</p>
