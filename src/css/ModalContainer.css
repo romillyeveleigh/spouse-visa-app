@@ -32,6 +32,10 @@
     border-color: #212529;
 }
 
+.was-validated .custom-control-input.red:valid:focus ~ .custom-control-label::before, .custom-control-input.is-valid:focus ~ .custom-control-label::before {
+  box-shadow: 0 0 0 0.2rem rgba(220, 53, 69, 0.25);
+}
+
 /*styling for orange status radio button*/
 
 .custom-control-input.orange.is-valid~.custom-control-label, 
@@ -69,6 +73,10 @@
 .was-validated 
 .custom-control-input.orange:valid~.custom-control-label {
     color: #212529;
+}
+
+.was-validated .custom-control-input.orange:valid:focus ~ .custom-control-label::before, .custom-control-input.is-valid:focus ~ .custom-control-label::before {
+  box-shadow: 0 0 0 0.2rem rgba(255, 165, 0, 0.25);
 }
 
 /*styling for green status radio button*/
@@ -110,22 +118,11 @@
     color:  #212529;
 }
 
-/*styling for radio button focus halos*/
-
-
-.was-validated .form-control:valid:focus, .form-control.is-valid:focus {
-  border-color:  #28a745;
-  box-shadow: 0 0 0 0.2rem rgba(86, 21, 27, 0.25);
-}
-
-.was-validated .custom-control-input.red:valid:focus ~ .custom-control-label::before, .custom-control-input.is-valid:focus ~ .custom-control-label::before {
-  box-shadow: 0 0 0 0.2rem rgba(220, 53, 69, 0.25);
-}
-
-.was-validated .custom-control-input.orange:valid:focus ~ .custom-control-label::before, .custom-control-input.is-valid:focus ~ .custom-control-label::before {
-  box-shadow: 0 0 0 0.2rem rgba(255, 165, 0, 0.25);
-}
-
 .was-validated .custom-control-input.green:valid:focus ~ .custom-control-label::before, .custom-control-input.is-valid:focus ~ .custom-control-label::before {
   box-shadow: 0 0 0 0.2rem rgba(40, 167, 69, 0.25);
 }
+
+
+
+
+

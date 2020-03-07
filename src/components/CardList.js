@@ -14,7 +14,7 @@ const selectRobots = robots.filter(robot => robot.category === category)
 	              key={i}
 	              props={selectRobots[i]}
 	              content={selectRobots[i].content}
-	              checkThis={selectRobots[i].checkThis}
+	              checkthis={selectRobots[i].checkthis}
 	              description={selectRobots[i].description}
 	              id={selectRobots[i].id}
 	              category={category}

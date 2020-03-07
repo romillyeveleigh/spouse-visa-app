@@ -3,8 +3,8 @@ import {render} from 'react-dom';
 import {Badge} from 'react-bootstrap';
 import ModalContainer from './ModalContainer';
 
-const Card = ({ category, description, content, id, checkThis }) => {
-	
+const Card = ({ category, description, content, id, checkthis }) => {
+
   // Modal function from Boostrap
   const [modalShow, setModalShow] = React.useState(false);
 
@@ -26,7 +26,7 @@ const Card = ({ category, description, content, id, checkThis }) => {
             description={description}
             content={content}
             id={id}
-            checkThis={checkThis}
+            checkthis={checkthis}
         />
     </>
   );

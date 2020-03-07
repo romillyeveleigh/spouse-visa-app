@@ -5,6 +5,7 @@ import '../css/ModalContainer.css';
 import Checklist from './Checklist';
 
 const ModalContainer = props => {
+  console.log('ModalContainer rendered!')
   return (
     <Modal
       {...props}
@@ -22,7 +23,7 @@ const ModalContainer = props => {
         <p>{props.content}</p>
         <p>Make sure that:</p>
           <div className="was-validated">
-            <Checklist id={props.id} checkThis={props.checkThis}/>
+            <Checklist id={props.id} checkthis={props.checkthis}/>
           </div>
       <p>What is the current status of this?</p>
         <div className="was-validated">
