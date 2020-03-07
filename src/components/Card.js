@@ -13,10 +13,11 @@ const Card = ({ category, description, content, id, checkthis }) => {
       <div className="tc grow bg-light-blue br3 pa3 ma2 dib bw2 shadow-5 card"
       onClick={() => setModalShow(true)}>
       	<div className="card-container">
-  	        <h2 className="cardHeader">{description}</h2>
+            <h2 className="cardHeader">{description}</h2>
   	        <p className="card-content">{content}</p>
   	        <p className="card-category">{category}</p>
             <Badge pill variant="success">Done</Badge>
+
       	</div>
       </div>
         <ModalContainer
