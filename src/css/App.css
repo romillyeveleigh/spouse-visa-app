@@ -30,6 +30,7 @@ font-size: 0.8em;
 
 .card-category {
 font-size: 0.5em;
+margin-bottom: 2px;
 }
 
 .hidden {
@@ -38,4 +39,15 @@ font-size: 0.5em;
 
 .badge-warning {
 	color: grey;
+}
+
+.badge {
+  position: relative;
+  top: 0;
+  right: 0;
+}
+
+.card-container {
+height: 100%;
+margin-bottom: -22px;
 }

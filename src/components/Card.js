@@ -34,14 +34,17 @@ const Card = ({ category, description, content, id, checkthis }) => {
   
   return (
     <>
-      <div id={id} className={chosenStyle}
-      onClick={() => setModalShow(true)}>
+      <div 
+      id={id} 
+      className={chosenStyle}
+      onClick={() => setModalShow(true)}
+      >
       	<div className="card-container">
             <h2 className="cardHeader">{description}</h2>
   	        <p className="card-content">{content}</p>
-  	        <p className="card-category">{category}</p>
-            <h6><Badge pill variant={variant}>{buttonText}</Badge></h6>
-      	 </div>
+        </div>
+        <div className="card-category">{category}</div>
+        <h6><Badge pill variant={variant}>{buttonText}</Badge></h6>
       </div>
         <ModalContainer
             show={modalShow}

@@ -27,7 +27,7 @@ export const user = {
             [false, false, false, false, false, false, false, false, false, false],
             [false, false, false, false, false, false, false, false, false, false],
         ],
-      status: [1, 2, , , , , , , , , , , , , , , , , , , , , , , , , ]
+      status: [, , , , , , , , , , , , , , , , , , , , , , , , , , ]
 
 
 }
