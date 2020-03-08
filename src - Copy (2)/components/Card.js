@@ -7,16 +7,15 @@ import {user} from '../constants/User';
 
 const Card = ({ category, description, content, id, checkthis }) => {
 
-  // Modal function from Bootstrap
+  // Modal function from Boostrap
   const [modalShow, setModalShow] = useState(false);
 
-  // add style to cards
   const blueStyle = "tc grow bg-light-blue br3 pa3 ma2 dib bw2 shadow-5 card"
   const greenStyle = "tc grow bg-light-green br3 pa3 ma2 dib bw2 shadow-5 card"
   let chosenStyle = blueStyle
   let variant = "secondary"
   let buttonText = "To do"
-  if (user.card[id].filter(boolean => boolean === true).length === checkthis.length && user.status[id] === 3) {
+  if (user.card[id].filter(boolean => boolean === true).length === checkthis.length) {
     chosenStyle = greenStyle
     variant = "success"
     buttonText = "Done✓"

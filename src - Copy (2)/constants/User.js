@@ -1,5 +1,5 @@
 export const user = {
-      card:[[false, false, false, false, false, false, false, false, false, false],
+    card:[  [false, false, false, false, false, false, false, false, false, false],
             [false, false, false, false, false, false, false, false, false, false],
             [false, false, false, false, false, false, false, false, false, false],
             [false, false, false, false, false, false, false, false, false, false],
@@ -26,10 +26,7 @@ export const user = {
             [false, false, false, false, false, false, false, false, false, false],
             [false, false, false, false, false, false, false, false, false, false],
             [false, false, false, false, false, false, false, false, false, false],
-        ],
-      status: [1, 2, , , , , , , , , , , , , , , , , , , , , , , , , ]
-
-
+        ]
 }
 
   
