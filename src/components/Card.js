@@ -12,14 +12,24 @@ const Card = ({ category, description, content, id, checkthis }) => {
 
   // add style to cards
   const blueStyle = "tc grow bg-light-blue br3 pa3 ma2 dib bw2 shadow-5 card"
-  const greenStyle = "tc grow bg-light-green br3 pa3 ma2 dib bw2 shadow-5 card"
+  const yellowStyle = "tc grow bg-light-yellow br3 pa3 ma2 dib bw2 shadow-5 card"
+  const greenStyle = "tc grow bg-light-green br3 pa3 ma2 dib bw2 card"
+  const greenStyleDone = "tc bg-light-green br3 pa3 ma2 dib bw2 card"
   let chosenStyle = blueStyle
   let variant = "secondary"
   let buttonText = "To do"
   if (user.card[id].filter(boolean => boolean === true).length === checkthis.length && user.status[id] === 3) {
-    chosenStyle = greenStyle
+    chosenStyle = greenStyleDone
     variant = "success"
     buttonText = "Done✓"
+  } else if (user.status[id] === 2) {
+    chosenStyle = yellowStyle
+    variant = "secondary"
+    buttonText = "In progress"
+  } else if (user.card[id].filter(boolean => boolean === true).length <= checkthis.length && user.status[id] === 3) {
+    chosenStyle = greenStyle
+    variant = "warning"
+    buttonText = "To check"
   }
   
   return (

@@ -8,7 +8,7 @@ const refreshStyling = (id, checkthis) => {
 
     const modalButton = document.querySelector('#modal-button')
     const modalTitle = document.querySelector('#contained-modal-title-vcenter')
-    const modalBadge = document.querySelector('#modal-badge')  
+    const modalBadge = document.querySelector('#modal-badge')
 
     // check if this card is 'done'
     if (user.card[id].filter(boolean => boolean === true).length === checkthis.length && user.status[id] === 3) {
@@ -16,6 +16,19 @@ const refreshStyling = (id, checkthis) => {
         modalButton.className = "btn btn-success border-success";
         modalTitle.className = "h4 text-success border-success";
         modalBadge.className = "shadow-4 badge badge-pill badge-success";
+        modalBadge.innerHTML = "Done✓"
+    } else if (user.card[id].filter(boolean => boolean === true).length <= checkthis.length && user.status[id] === 3) {
+        // if 'in progress', add styles
+        modalButton.className = "btn btn-primary";
+        modalTitle.className = "h4 text-dark";
+        modalBadge.className = "shadow-4 badge badge-pill badge-warning";
+        modalBadge.innerHTML = "To check"
+    } else if (user.status[id] === 2) {
+        // if 'in progress', add styles
+        modalButton.className = "btn btn-primary";
+        modalTitle.className = "h4 text-dark";
+        modalBadge.className = "shadow-4 badge badge-pill badge-warning";
+        modalBadge.innerHTML = "In progress"
     } else {
         // if false, revert styles
         modalButton.className = "btn btn-primary";
