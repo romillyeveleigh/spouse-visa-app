@@ -1,14 +1,14 @@
-export const robots = [
+export const robotsDemo = [
   {
     id: 0,
-    category: 'Personal Documents',
-    description: 'Main Cover Letter',
-    content: 'This is the letter the person applying writes to support the application.',
-    checkthis: [11, 12, 5, 6]
+    category: 'Demo Checklist',
+    description: '📌 Click here to update this visa item!',
+    content: 'Choose \'Yes\' from the options below to change this item\'s status.',
+    checkthis: [58, 59, 60]
   },
     {
     id: 1,
-    category: 'Personal Documents',
+    category: 'Demo Checklist',
     description: 'Sponsor Cover Letter',
     content: 'This is the letter the sponsor writes to support the application.',
     checkthis: [12, 11, 56, 14, 13, 5, 6]
@@ -39,7 +39,7 @@ export const robots = [
     category: 'Personal Documents',
     description: 'Language Test Certificate',
     content: 'This is to prove your English ability.',
-    checkthis: [18, 2, 19 ]
+    checkthis: [18, 2, 19]
   },
   {
     id: 6,
@@ -47,34 +47,6 @@ export const robots = [
     description: 'Tuberculosis Test Results',
     content: 'This is the certificate to prove you don\'t have tuberculosis.',
     checkthis: [38, 0, 2]
-  },
-  {
-    id: 7,
-    category: 'Application Forms',
-    description: 'Online Application',
-    content: 'This is the main form you fill out online to apply for your visa.',
-    checkthis: [20, 21, 22]
-  },
-  {
-    id: 8,
-    category: 'Application Forms',
-    description: 'Biometric Appointment Confirmation',
-    content: 'This is the email you get after you book your biometric appointment.',
-    checkthis: [23, 22, 5]
-  },
-   {
-    id: 9,
-    category: 'Payment Confirmation',
-    description: 'Visa Payment Confirmation',
-    content: 'This is to show you have paid for your visa application.',
-    checkthis: [21, 22, 5]
-  },
-    {
-    id: 10,
-    category: 'Payment Confirmation',
-    description: 'IHS Payment Confirmation',
-    content: 'This is to show you have paid for the International Health Surcharge.',
-    checkthis: [21, 22, 5]
   },  
    {
     id: 11,
@@ -98,24 +70,10 @@ export const robots = [
     checkthis: [2, 30, 37, 29, 28]
   },
   {
-    id: 14,
-    category: 'Financial Requirements',
-    description: 'Applicant\'s Payslips',
-    content: 'These are payslips from the employer confirming the applicant\'s income.',
-    checkthis: [2, 30, 37, 29, 28]
-  },
-  {
     id: 15,
     category: 'Financial Requirements',
     description: 'Sponsor\'s Bank Statements',
     content: 'These are to show your sponsor received money into their account.',
-    checkthis: [1, 31, 32, 33]
-  },
-  {
-    id: 16,
-    category: 'Financial Requirements',
-    description: 'Applicant\'s Bank Statements',
-    content: 'These are to show the person applying received money into their account.',
     checkthis: [1, 31, 32, 33]
   },
    {
@@ -126,24 +84,10 @@ export const robots = [
     checkthis: [1, 31, 34, 33]
   },
   {
-    id: 18,
-    category: 'Financial Requirements',
-    description: 'Savings Account Statements',
-    content: 'These are to show the person applying has savings in their account.',
-    checkthis: [1, 31, 34, 33]
-  },
-  {
     id: 19,
     category: 'Financial Requirements',
     description: 'P60 (End of Year Certificate)',
     content: 'This is to show your sponsor paid tax on their income last year.',
-    checkthis: [2, 35]
-  },
-   {
-    id: 20,
-    category: 'Financial Requirements',
-    description: 'P60 (End of Year Certificate)',
-    content: 'This is to show the applicant paid tax on their income last year.',
     checkthis: [2, 35]
   },
    {
@@ -154,24 +98,10 @@ export const robots = [
     checkthis: [1, 36, 37]
   },
   {
-    id: 22,
-    category: 'Financial Requirements',
-    description: 'Property Ownership Document',
-    content: 'This is to show the applicant owns the property from which they get income.',
-    checkthis: [1, 36, 37]
-  },
-  {
     id: 23,
     category: 'Financial Requirements',
     description: 'Lease Agreement',
     content: 'This is to show your sponsor rents their property to a tenant.',
-    checkthis: [1, 37, 2]
-  },
-    {
-    id: 24,
-    category: 'Financial Requirements',
-    description: 'Lease Agreement',
-    content: 'This is to show the applicant rents their property to a tenant.',
     checkthis: [1, 37, 2]
   },
   {
@@ -179,13 +109,6 @@ export const robots = [
     category: 'Financial Requirements',
     description: 'Self-Employment Documentation',
     content: 'This is to show the applicant is self-employed.',
-    checkthis: [1, 39, 40, 41, 42, 43]
-  },
-   {
-    id: 26,
-    category: 'Financial Requirements',
-    description: 'Self-Employment Documentation',
-    content: 'This is to show the sponsor is self-employed.',
     checkthis: [1, 39, 40, 41, 42, 43]
   },
   {

@@ -1,30 +1,42 @@
-import React from 'react';
-import CategoryList from './components/CategoryList';
-import {robots} from './constants/Robots';
-import {Navbar} from 'react-bootstrap';
+import React from "react";
+import { BrowserRouter as Router, Route } from "react-router-dom";
+import Home from "./Home";
+import Login from "./Login";
+import SignUp from "./SignUp";
+import Settings from "./components/Settings";
+import SettingsQuestions from "./components/SettingsQuestions";
+import Header from "./components/Header";
+import Footer from "./components/Footer";
+import WelcomePage from "./components/WelcomePage";
+import { AuthProvider } from "./Auth";
+import PrivateRoute from "./PrivateRoute";
 
-function App() {
+const App = () => {
+
   return (
-    <div>
-      <div className="tc">
-        <Navbar bg="primary" variant="dark">
-          <Navbar.Brand href="#home">Spouse Visa Application Helper</Navbar.Brand>
-          <Navbar.Toggle />
-          <Navbar.Collapse className="justify-content-end">
-            <Navbar.Text>
-              Signed in as: <a href="#login">Mark Otto</a>
-            </Navbar.Text>
-          </Navbar.Collapse>
-        </Navbar>
-          <p>
-            Choose from the following document categories:
-          </p>
+    <>
+    
+    <AuthProvider>
+      <Router >
         <div>
-          <CategoryList robots={robots} />
+          <PrivateRoute exact path="/home" component={Home}/>
+          <Route path="/settingsquestions" component={SettingsQuestions} />
+          <Route path="/header" component={Header} />
+          <Route path="/login" component={Login} />
+          <Route path="/signup" component={SignUp} />
+          <Route path="/settings" component={Settings}/>
         </div>
+      </Router>
+    </AuthProvider>
+    <Router >
+      <div>
+        <Route exact path="/" component={WelcomePage} />
       </div>
-    </div>
+    </Router>
+    <Footer />
+    </>
   );
-}
+};
 
 export default App;
+

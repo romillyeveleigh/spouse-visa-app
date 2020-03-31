@@ -1,17 +1,61 @@
 .h4 {
-    height: 2rem;
+    height: auto;
+}
+
+.modal {
+    overflow-y: scroll;
+    -webkit-overflow-scrolling: touch;
+    height:100%;
+}
+
+@supports (-webkit-overflow-scrolling: touch) {
+  /* CSS specific to iOS devices */
+  .modal-content {
+        overflow-y: scroll;
+        -webkit-overflow-scrolling: touch;
+        height:100%;
+  }
+}
+
+.modal-header {
+padding-bottom: 0px;
+}
+
+#contained-modal-title-vcenter {
+  margin-bottom: 2px;
 }
 
 body {
   margin: 0;
   padding: 0;
   font-family: sans-serif;
+  background: white
+}
+
+body.modal-open {
+    overflow: hidden;
 }
 
 .card {
  width: 160px;
  height: 200px;
  cursor: pointer;
+}
+
+#settings {
+ cursor: default;
+}
+
+.login-form.card {
+ width: 450px;
+ height: auto;
+ cursor: default;
+}
+
+.center-form {
+ width: 450px;
+ height: auto;
+ cursor: default;
 }
 
 .cardList {
@@ -51,3 +95,77 @@ margin-bottom: 2px;
 height: 100%;
 margin-bottom: -22px;
 }
+
+.CategoryList {
+margin-bottom: 50px;
+}
+
+.Settings {
+margin-bottom: 50px;
+}
+
+.jumbotron-cover-image {
+	padding-top: 20px;
+        position: relative;
+        background: white;
+        width: 5;
+        height: 370px;
+        background-size: cover;
+        color: #aaa;
+}
+
+.signup-cover-image {
+        position: relative;
+        background: #ffffff url("/img/couple-beach.jpg") bottom center;
+        width: 100%;
+        height: 100%;
+        background-size: cover;
+        min-height: 600px;
+}
+
+.signin-cover-image {
+        position: relative;
+        background: #ffffff url("/img/couple-beach.jpg") bottom center;
+        width: 100%;
+        height: 100%;
+        background-size: cover;
+        min-height: 600px;
+}
+
+.checklist-background-image {
+        position: relative;
+        background: linear-gradient(white, #f2f2f2, #e6f5f0, white);
+        /*background: #ffffff url("/img/wedding-nature.jpg") bottom center;*/
+        width: 100%;
+        height: 100%;
+        background-size: cover;
+        min-height: 600px;
+}
+
+.card-title {
+	height: 4em;
+}
+
+.jumbotron {
+        background-image: url("/img/wedding-nature.jpg");
+        background-position: 10% 80%;
+        background-size: cover;
+        padding: 1rem 2rem 5.5rem 1rem;
+}
+
+.centered-box {
+ max-width:30rem;
+ display: inline-block;
+ padding: 0.5em;
+ font: 1em;
+}
+
+.list-group-item {
+	text-align: left;
+}
+
+.footer-year {
+  font-size: 0.8em;
+}
+
+
